@@ -122,6 +122,7 @@
                 mehr Informationen erh&auml;lst Du auf GitHub, siehe Link.
                 <br /><a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">&raquo; mehr</a>
               </p>
+              <!--
               <div class="news-separator"></div>
               <span class="global-news">&nbsp;</span>
               <strong>01.01.1970 23:59</strong>
@@ -129,6 +130,7 @@
                 EXAMPLE TITLE
                 <br /><a href="#">&raquo; mehr</a>
               </p>
+              -->
             </div>
           </div>
           <div class="footer-bottom"></div>
@@ -148,9 +150,8 @@
       // set variable
       var image = "", imagePath = "graphic/index/";
 
-      switch (Math.floor(Math.random()*3)+1) {
-        case 3: image = "bg-paladin-female.png"; break;
-        case 2: image = "bg-sarazene.png";       break;
+      switch (Math.floor(Math.random()*2)+1) {
+        case 2: image = "bg-paladin-female.png"; break;
         case 1: image = "bg-paladin.png";        break;
       }
       // set new image

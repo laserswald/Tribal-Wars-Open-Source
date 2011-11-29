@@ -9,6 +9,25 @@
  * @version   1.0.0
  */
 class Template {
+/**
+   * @var object $instance
+   */
+  protected static $instance = null;
 
+  /**
+   * This function returns an instance of the class.
+   *
+   * @access public
+   * @return object
+   */
+  public static function getInstance ()
+  {
+    if ( self::$instance instanceof Template )
+      throw new Exception ('instance already exists');
+    else
+      self::$instance = new self;
+
+    return self::$instance;
+  }
 }
 ?>
