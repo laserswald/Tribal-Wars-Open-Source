@@ -46,7 +46,7 @@
                   <li class="last"><a href="#" onclick="Index.toggle_screenshot(3); return false;"><img src="graphic/index/tribalwars-paladin.png?1" alt="Browsergame Die Stämme: Der Paladin" /></a></li>
                 </ul>
                 <br style="clear:both;" />
-                <strong style="padding-top:10px;">Schon {$playerAvailable} Spieler sind dabei!</strong>
+                <strong style="padding-top:10px;">Schon 0 Spieler sind dabei!</strong>
               </div>
               <div class="login-block">
                 <h2 style="text-align:left;margin-bottom:15px;">Die Stämme - Login</h2>
@@ -115,6 +115,8 @@
           <div class="footer-header"></div>
           <div class="footer-holder">
             <div>
+              {% include 'index.news.tpl' %}
+              <!-- basement news -->
               <span class="global-news">&nbsp;</span>
               <strong>01.01.1970 00:00</strong>
               <p>
@@ -122,15 +124,6 @@
                 mehr Informationen erh&auml;lst Du auf GitHub, siehe Link.
                 <br /><a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">&raquo; mehr</a>
               </p>
-              <!--
-              <div class="news-separator"></div>
-              <span class="global-news">&nbsp;</span>
-              <strong>01.01.1970 23:59</strong>
-              <p>
-                EXAMPLE TITLE
-                <br /><a href="#">&raquo; mehr</a>
-              </p>
-              -->
             </div>
           </div>
           <div class="footer-bottom"></div>
