@@ -17,7 +17,7 @@
       <div id="main">
         <div id="header">
           <h1>
-            <a href="index.php" style="background:url(graphic/lang/de/bg-logo.jpg) no-repeat 100% 0;">Die Stämme - Das Browsergame im Mittelalter</a>
+            <a href="index.php" style="background:url(graphic/lang/de/bg-logo.jpg) no-repeat 100% 0;">Die St&auml;mme - Das Browsergame im Mittelalter</a>
           </h1>
           <div class="navigation">
             <div class="navigation-holder">
@@ -116,9 +116,17 @@
           <div class="footer-holder">
             <div>
               <span class="global-news">&nbsp;</span>
+              <strong>01.01.1970 00:00</strong>
+              <p>
+                Die Staemme - Open-Source, <br />
+                mehr Informationen erh&auml;lst Du auf GitHub, siehe Link.
+                <br /><a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">&raquo; mehr</a>
+              </p>
+              <div class="news-separator"></div>
+              <span class="global-news">&nbsp;</span>
               <strong>01.01.1970 23:59</strong>
               <p>
-                Die Staemme - Open-Source
+                EXAMPLE TITLE
                 <br /><a href="#">&raquo; mehr</a>
               </p>
             </div>
@@ -127,7 +135,7 @@
         </div>
         <!-- footer -->
         <div class="closure">
-          &copy; 2011 <a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">ekilnu</a>
+          &copy; 2011 <a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">ekilnu</a> &middot; <a href="#" onclick="Index.toggle_screenshot(8); return false;">Impressum</a>
         </div>
       </div>
       <!-- main -->
@@ -135,5 +143,19 @@
         <div id="screenshot_image"></div>
       </div>
     </div>
+    <script type="text/javascript">
+    //<![CDATA[
+      // set variable
+      var image = "", imagePath = "graphic/index/";
+
+      switch (Math.floor(Math.random()*3)+1) {
+        case 3: image = "bg-paladin-female.png"; break;
+        case 2: image = "bg-sarazene.png";       break;
+        case 1: image = "bg-paladin.png";        break;
+      }
+      // set new image
+      $("span.paladin img").attr("src", imagePath + image);
+    //]]>
+    </script>
   </body>
 </html>
