@@ -127,8 +127,8 @@
 				</div>
 				<!-- footer -->
 				<div class="closure">
-					&copy; 2011 <a target="_blank" href="#">ekilnu</a>
-                </div>
+					&copy; 2011 <a target="_blank" href="https://github.com/ekilnu/Tribal-Wars-Open-Source">ekilnu</a>
+        </div>
 			</div>
 			<!-- main -->
 			<div id="screenshot" style="display:none" onclick="Index.hide_screenshot();">
