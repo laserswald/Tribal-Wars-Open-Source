@@ -10,7 +10,7 @@ RUN docker-php-ext-install mysqli && \
         docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
         docker-php-ext-install -j$(nproc) gd
 COPY . /usr/src/tribalwars
-RUN chmod +x /usr/src/tribalwars/startup.sh
+RUN chmod +x /usr/src/tribalwars/configure_db.sh
 WORKDIR /usr/src/tribalwars
-ENTRYPOINT ["/usr/src/tribalwars/startup.sh"]
+ENTRYPOINT ["/usr/src/tribalwars/configure_db.sh"]
 CMD ["php", "-S", "0.0.0.0:80"]
