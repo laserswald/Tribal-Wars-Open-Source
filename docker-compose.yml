@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    environment:
+      DB_HOSTNAME: "127.0.0.1"
+      DB_DATABASE: tribalwars
+      DB_USERNAME: "root"
+      DB_PASSWORD: ""
