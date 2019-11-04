@@ -26,7 +26,15 @@ Twig_Autoloader::register();
 /** initialize Twig environment */
 $twig = new Twig_Environment(new Twig_Loader_Filesystem('templates'), array('cache'=>'compilation_cache'));
 
+$DB_HOSTNAME = "127.0.0.1";
+$DB_USERNAME = "root";
+$DB_PASSWORD = "";
 
-/** do connect to mysql server */
-$db = new mysqli(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+/** do connect to mysql serverserver */
+// $db = new mysqli(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+$db = new mysqli($DB_HOSTNAME, $DB_USERNAME, $DB_PASSWORD);
+if ($db->connect_error) {
+           die("Connection failed: " . $db->connect_error);
+}
+echo "Connected successfully"
 ?>
